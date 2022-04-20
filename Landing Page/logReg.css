@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Century Gothic;
+}
+
+.content {
+  background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),
+    url(img/loginBackground.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: inherit;
+}
+
+.login a {
+  top: 65%;
+  left: 50%;
+  width: 100px;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  color: #eafdf9;
+  border: 1px solid #fff;
+  display: inline-block;
+  transition: 0.2s ease;
+  padding: 10px 20px;
+  border-radius: 5px;
+  list-style: none;
+  text-decoration: none;
+  margin: 5px;
+}
+
+.backgroundcolor {
+  top: 50%;
+  left: 50%;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  background-image: url(img/backgroundForm.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+}
+.content a:hover {
+  font-weight: bold;
+  color: #000;
+  background-color: #eafdf9;
+}
+
+.email {
+  top: 40%;
+  left: 50%;
+  width: 300px;
+  height: 40px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  color: #000;
+  transition: 0.2s ease;
+  border-radius: 5px;
+  margin: 5px;
+  font-size: 15px;
+  padding-left: 10px;
+}
+
+.pass {
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 40px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  color: #000;
+  transition: 0.2s ease;
+  border-radius: 5px;
+  margin: 5px;
+  font-size: 15px;
+  padding-left: 10px;
+}
+
+.loginForm {
+  margin-top: 10%;
+  color: #fff;
+  margin-left: 35%;
+  position: relative;
+}

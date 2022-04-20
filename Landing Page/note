@@ -1,0 +1,114 @@
+.content {
+padding: 16px;
+}
+
+.sticky {
+position: fixed;
+top: 0;
+margin: 20px;
+height: 70px;
+width: 100%;
+}
+
+.sticky + .content {
+padding-top: 102px;
+}
+
+.name {
+height: 100%;
+background-size: cover;
+font-size: 50px;
+}
+
+
+
+
+---------------------slide show------------------
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Slideshow</title>
+  <style>
+    [data-component="slideshow"] .slide {
+      display: none;
+    }
+
+    [data-component="slideshow"] .slide.active {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="slideshow-example" data-component="slideshow">
+    <div role="list">
+      <div class="slide">
+        <img src="img/background.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="img/cs.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="img/cs2.jpg" alt="">
+      </div>
+    </div>
+  </div>
+  <script src="slideshow.js"></script>
+</body>
+
+</html>
+
+------------------------slide show js -----------------------
+
+var slideshows = document.querySelectorAll('[data-component="slideshow"]');
+
+// Apply to all slideshows that you define with the markup wrote
+slideshows.forEach(initSlideShow);
+
+function initSlideShow(slideshow) {
+
+var slides = document.querySelectorAll(`#${slideshow.id} [role="list"] .slide`); // Get an array of slides
+
+var index = 0, time = 5000;
+slides[index].classList.add('active');
+
+setInterval(() => {
+slides[index].classList.remove('active');
+
+//Go over each slide incrementing the index
+index++;
+
+// If you go over all slides, restart the index to show the first slide and start again
+if (index === slides.length) index = 0;
+
+slides[index].classList.add('active');
+
+}, time);
+}
+
+
+---------------center-----
+
+top: 50%;
+left: 50%;
+transform: translate(-50% , -50%);
+
+--------------facebook page---------
+.parallax a {
+position:absolute;
+top: 70%;
+left: 50%;
+transform: translate(-50% , -50%);
+border-bottom: none;
+text-decoration: none;
+border: solid 1px #fff;
+padding: 10px 20px;
+color: #dbe0f0ee;
+font-weight: bold;
+border-radius: 5px;
+transition: 0.20s ease;
+margin: 5px;
+}
