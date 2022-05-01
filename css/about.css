@@ -89,14 +89,14 @@
   }
   
   .navbar_btn {
-    color: #000;
+  color: #000;
   font-size:15px;
   height: 60px;
   padding: 0 0.5rem;
   }
   
   .button {
-    display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
