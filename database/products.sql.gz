@@ -1,0 +1,96 @@
+-- phpMyAdmin SQL Dump
+-- version 5.1.3
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: May 07, 2022 at 11:07 AM
+-- Server version: 10.4.24-MariaDB
+-- PHP Version: 8.1.5
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `products`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `product`
+--
+
+CREATE TABLE `product` (
+  `prod_id` int(10) NOT NULL,
+  `prod_name` varchar(100) NOT NULL,
+  `price` float DEFAULT NULL,
+  `shipping_fee` float NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `product`
+--
+
+INSERT INTO `product` (`prod_id`, `prod_name`, `price`, `shipping_fee`) VALUES
+(1, 'HP Laptop 15-dw1086nia', 114.99, 500),
+(2, 'Acer Aspire 5 Slim Laptop', 399.99, 500),
+(3, 'Apple Thunderbolt 27inches Monitor', 1000, 500),
+(4, 'ASUS X509', 379, 500),
+(5, 'Samsung Series 9 NP900X4C-A03US 15\" Laptop Computer', 149.99, 500),
+(6, 'Dell Inspiron I7548-4271SLV', 300, 500);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `purchased`
+--
+
+CREATE TABLE `purchased` (
+  `id_no` int(10) NOT NULL,
+  `homeAdd` varchar(100) NOT NULL,
+  `town` varchar(100) NOT NULL,
+  `zipCode` int(11) NOT NULL,
+  `date` varchar(20) NOT NULL,
+  `firstname` varchar(50) NOT NULL,
+  `lastname` text NOT NULL,
+  `phone` int(11) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `productName` int(11) NOT NULL,
+  `quantity` int(11) NOT NULL,
+  `shipping` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `purchased`
+--
+
+INSERT INTO `purchased` (`id_no`, `homeAdd`, `town`, `zipCode`, `date`, `firstname`, `lastname`, `phone`, `email`, `productName`, `quantity`, `shipping`) VALUES
+(0, 'Zone2 Kibaghut', 'Laguindingan', 9019, '07/05/2022', 'Dexter', 'Caones', 9898098, 'occ.@gmail.com', 0, 4, 500);
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `product`
+--
+ALTER TABLE `product`
+  ADD PRIMARY KEY (`prod_id`);
+
+--
+-- Indexes for table `purchased`
+--
+ALTER TABLE `purchased`
+  ADD PRIMARY KEY (`id_no`);
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

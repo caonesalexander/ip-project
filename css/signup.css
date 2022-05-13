@@ -118,7 +118,7 @@
   }
 
   form{
-    height: 520px;
+    height: auto;
     width: 400px;
     background-color: rgba(9, 46, 94, 0.432);
     position: absolute;
