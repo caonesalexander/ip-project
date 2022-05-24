@@ -29,19 +29,19 @@
          </div>
          <ul class="navbar_menu">
             <li class="navbar_item">
-               <a href="product.html" class="navbar_links">Products</a>
+               <a href="product.php" class="navbar_links">Products</a>
             </li>
             <li class="navbar_item">
-               <a href="about.html" class="navbar_links">About</a>
+               <a href="about.php" class="navbar_links">About</a>
             </li>
             <li class="navbar_item">
-               <a href="contact.html" class="navbar_links">Contact Us</a>
+               <a href="contact.php" class="navbar_links">Contact Us</a>
             </li>
             <li class="navbar_btn">
-               <a href="signup.html" class="button">Sign Up</a>
+               <a href="signup.php" class="button">Sign Up</a>
             </li>
             <li class="navbar_btn">
-               <a href="login.html" class="button">Login</a>
+               <a href="login.php" class="button">Login</a>
             </li>
          </ul>
       </div>

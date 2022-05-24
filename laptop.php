@@ -47,19 +47,19 @@ include "connection.php";
          </div>
          <ul class="navbar_menu">
             <li class="navbar_item">
-               <a href="product.html" class="navbar_links">Products</a>
+               <a href="product.php" class="navbar_links">Products</a>
             </li>
             <li class="navbar_item">
-               <a href="about.html" class="navbar_links">About</a>
+               <a href="about.php" class="navbar_links">About</a>
             </li>
             <li class="navbar_item">
-               <a href="contact.html" class="navbar_links">Contact Us</a>
+               <a href="contact.php" class="navbar_links">Contact Us</a>
             </li>
             <li class="navbar_btn">
-               <a href="signup.html" class="button">Sign Up</a>
+               <a href="signup.php" class="button">Sign Up</a>
             </li>
             <li class="navbar_btn">
-               <a href="login.html" class="button">Login</a>
+               <a href="login.php" class="button">Login</a>
             </li>
          </ul>
       </div>
@@ -84,8 +84,8 @@ include "connection.php";
          </div>
 
          <div class="product" data-name="p-3">
-            <img src="images/Apple.jpg" alt="">
-            <h3>Apple Thunderbolt</h3>
+            <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/mbp16-spacegray-select-202110?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1632788574000" alt="">
+            <h3>MacBook M1 Prot</h3>
             <div class="price">$1,000.00</div>
          </div>
 
@@ -170,8 +170,8 @@ include "connection.php";
 
          <div class="preview" data-target="p-3">
             <i class="fas fa-times"></i>
-            <img src="images/Apple.jpg" alt="">
-            <h3>Apple Thunderbolt 27inches Monitor</h3>
+            <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/mbp16-spacegray-select-202110?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1632788574000" alt="">
+            <h3>MacBook M1 Pro</h3>
             <div class="stars">
                <i class="fas fa-star"></i>
                <i class="fas fa-star"></i>
@@ -180,12 +180,12 @@ include "connection.php";
                <i class="fas fa-star-half-alt"></i>
                <span>( 250 )</span>
             </div>
-            <p>27 inches screen</p>
-            <p>Full HD</p>
-            <p>TFT display</p>
-            <p>Resolution: 2560x1440</p>
+            <p>16-core Neural Engine</p>
+            <p>16-inch Liquid Retina XDR display</p>
+            <p>Three Thunderbolt 4 ports, HDMI port, SDXC card slot, MagSafe 3 port</p>
+            <p>Magic Keyboard with Touch ID</p>
 
-            <div class="price">$1000.00</div>
+            <div class="price">$1,000.00</div>
             <div class="buttons">
                <button type="submit" name="insert3" id="insert3" class="buy" style="background: #444; color:#fff;
                flex:1 1 16rem; padding:1rem; font-size: 1.8rem; border:.1rem solid #444; cursor:pointer;

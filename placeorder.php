@@ -21,7 +21,7 @@ include 'connection.php';
 
   <nav class="navbar">
     <div class="navbar_container">
-      <a href="about.html"><img src="technologo.png" id="navbar_logo"></a>
+      <a href="about.html"><img src="images/technologo.png" id="navbar_logo"></a>
       <div class="navbar_toggle" id="mobile-menu">
         <span class="bar"></span>
         <span class="bar"></span>
@@ -194,7 +194,7 @@ include 'connection.php';
 
       </form>
 
-      <form action="/IP-PROJECT/ip-project/product.html">
+      <form action="/IP-PROJECT/ip-project/product.php">
         <div class="Yorder">
           <table>
 
@@ -211,7 +211,7 @@ include 'connection.php';
   '$_POST[City]','$_POST[Zip]', '$_POST[Phone]','$_POST[Email]','$row[prod_name]','$row[price]','$_POST[Quan]', '$row[shipping_fee]')") or die(mysqli_error($link));
 
               $retrieve2 = mysqli_query($link, "SELECT *, (quantity * price + shipping) AS totalPayment FROM `purchased` WHERE email = '$_POST[Email]' AND prod_id = $id 
-              AND lname = '$_POST[lname]'");
+              AND lname = '$_POST[lname]' AND quantity = '$_POST[Quan]'");
               $get = mysqli_fetch_array($retrieve2);
 
               echo "<label style='font-weight: bold; font-size: 20px; text-decoration: underline;'>";
@@ -263,7 +263,7 @@ include 'connection.php';
   '$_POST[City]','$_POST[Zip]', '$_POST[Phone]','$_POST[Email]','$row[prod_name]','$row[price]','$_POST[Quan]', '$row[shipping_fee]')") or die(mysqli_error($link));
 
               $retrieve2 = mysqli_query($link, "SELECT *, (quantity * price + shipping) AS totalPayment FROM `purchased` WHERE email = '$_POST[Email]' AND prod_id = $id 
-              AND lname = '$_POST[lname]'");
+              AND lname = '$_POST[lname]' AND quantity = '$_POST[Quan]'");
               $get = mysqli_fetch_array($retrieve2);
 
               echo "<label style='font-weight: bold; font-size: 20px; text-decoration: underline;'>";
@@ -315,7 +315,7 @@ include 'connection.php';
   '$_POST[City]','$_POST[Zip]', '$_POST[Phone]','$_POST[Email]','$row[prod_name]','$row[price]','$_POST[Quan]', '$row[shipping_fee]')") or die(mysqli_error($link));
 
               $retrieve2 = mysqli_query($link, "SELECT *, (quantity * price + shipping) AS totalPayment FROM `purchased` WHERE email = '$_POST[Email]' AND prod_id = $id  
-              AND lname = '$_POST[lname]'");
+              AND lname = '$_POST[lname]' AND quantity = '$_POST[Quan]'");
               $get = mysqli_fetch_array($retrieve2);
 
               echo "<label style='font-weight: bold; font-size: 20px; text-decoration: underline;'>";
@@ -367,7 +367,7 @@ include 'connection.php';
   '$_POST[City]','$_POST[Zip]', '$_POST[Phone]','$_POST[Email]','$row[prod_name]','$row[price]','$_POST[Quan]', '$row[shipping_fee]')") or die(mysqli_error($link));
 
               $retrieve2 = mysqli_query($link, "SELECT *, (quantity * price + shipping) AS totalPayment FROM `purchased` WHERE email = '$_POST[Email]' AND prod_id = $id 
-              AND lname = '$_POST[lname]'");
+              AND lname = '$_POST[lname]' AND quantity = '$_POST[Quan]'");
               $get = mysqli_fetch_array($retrieve2);
 
               echo "<label style='font-weight: bold; font-size: 20px; text-decoration: underline;'>";
@@ -419,7 +419,7 @@ include 'connection.php';
   '$_POST[City]','$_POST[Zip]', '$_POST[Phone]','$_POST[Email]','$row[prod_name]','$row[price]','$_POST[Quan]', '$row[shipping_fee]')") or die(mysqli_error($link));
 
               $retrieve2 = mysqli_query($link, "SELECT *, (quantity * price + shipping) AS totalPayment FROM `purchased` WHERE email = '$_POST[Email]' AND prod_id = $id 
-              AND lname = '$_POST[lname]'");
+              AND lname = '$_POST[lname]' AND quantity = '$_POST[Quan]'");
               $get = mysqli_fetch_array($retrieve2);
 
               echo "<label style='font-weight: bold; font-size: 20px; text-decoration: underline;'>";
@@ -471,7 +471,7 @@ include 'connection.php';
   '$_POST[City]','$_POST[Zip]', '$_POST[Phone]','$_POST[Email]','$row[prod_name]','$row[price]','$_POST[Quan]', '$row[shipping_fee]')") or die(mysqli_error($link));
 
               $retrieve2 = mysqli_query($link, "SELECT *, (quantity * price + shipping) AS totalPayment FROM `purchased` WHERE email = '$_POST[Email]' AND prod_id = $id 
-              AND lname = '$_POST[lname]'");
+              AND lname = '$_POST[lname]' AND quantity = '$_POST[Quan]'");
               $get = mysqli_fetch_array($retrieve2);
 
               echo "<label style='font-weight: bold; font-size: 20px; text-decoration: underline;'>";
@@ -523,7 +523,7 @@ include 'connection.php';
   '$_POST[City]','$_POST[Zip]', '$_POST[Phone]','$_POST[Email]','$row[prod_name]','$row[price]','$_POST[Quan]', '$row[shipping_fee]')") or die(mysqli_error($link));
 
               $retrieve2 = mysqli_query($link, "SELECT *, (quantity * price + shipping) AS totalPayment FROM `purchased` WHERE email = '$_POST[Email]' AND prod_id = $id 
-              AND lname = '$_POST[lname]'");
+              AND lname = '$_POST[lname]'AND quantity = '$_POST[Quan]'");
               $get = mysqli_fetch_array($retrieve2);
 
               echo "<label style='font-weight: bold; font-size: 20px; text-decoration: underline;'>";
@@ -575,7 +575,7 @@ include 'connection.php';
   '$_POST[City]','$_POST[Zip]', '$_POST[Phone]','$_POST[Email]','$row[prod_name]','$row[price]','$_POST[Quan]', '$row[shipping_fee]')") or die(mysqli_error($link));
 
               $retrieve2 = mysqli_query($link, "SELECT *, (quantity * price + shipping) AS totalPayment FROM `purchased` WHERE email = '$_POST[Email]' AND prod_id = $id 
-              AND lname = '$_POST[lname]'");
+              AND lname = '$_POST[lname]' AND quantity = '$_POST[Quan]'");
               $get = mysqli_fetch_array($retrieve2);
 
               echo "<label style='font-weight: bold; font-size: 20px; text-decoration: underline;'>";
@@ -627,7 +627,7 @@ include 'connection.php';
   '$_POST[City]','$_POST[Zip]', '$_POST[Phone]','$_POST[Email]','$row[prod_name]','$row[price]','$_POST[Quan]', '$row[shipping_fee]')") or die(mysqli_error($link));
 
               $retrieve2 = mysqli_query($link, "SELECT *, (quantity * price + shipping) AS totalPayment FROM `purchased` WHERE email = '$_POST[Email]' AND prod_id = $id  
-              AND lname = '$_POST[lname]'");
+              AND lname = '$_POST[lname]' AND quantity = '$_POST[Quan]'");
               $get = mysqli_fetch_array($retrieve2);
 
               echo "<label style='font-weight: bold; font-size: 20px; text-decoration: underline;'>";
@@ -679,7 +679,7 @@ include 'connection.php';
   '$_POST[City]','$_POST[Zip]', '$_POST[Phone]','$_POST[Email]','$row[prod_name]','$row[price]','$_POST[Quan]', '$row[shipping_fee]')") or die(mysqli_error($link));
 
               $retrieve2 = mysqli_query($link, "SELECT *, (quantity * price + shipping) AS totalPayment FROM `purchased` WHERE email = '$_POST[Email]' AND prod_id = $id 
-              AND lname = '$_POST[lname]'");
+              AND lname = '$_POST[lname]' AND quantity = '$_POST[Quan]'");
               $get = mysqli_fetch_array($retrieve2);
 
               echo "<label style='font-weight: bold; font-size: 20px; text-decoration: underline;'>";
@@ -731,7 +731,7 @@ include 'connection.php';
   '$_POST[City]','$_POST[Zip]', '$_POST[Phone]','$_POST[Email]','$row[prod_name]','$row[price]','$_POST[Quan]', '$row[shipping_fee]')") or die(mysqli_error($link));
 
               $retrieve2 = mysqli_query($link, "SELECT *, (quantity * price + shipping) AS totalPayment FROM `purchased` WHERE email = '$_POST[Email]' AND prod_id = $id 
-              AND lname = '$_POST[lname]'");
+              AND lname = '$_POST[lname]' AND quantity = '$_POST[Quan]'");
               $get = mysqli_fetch_array($retrieve2);
 
               echo "<label style='font-weight: bold; font-size: 20px; text-decoration: underline;'>";
@@ -783,7 +783,111 @@ include 'connection.php';
   '$_POST[City]','$_POST[Zip]', '$_POST[Phone]','$_POST[Email]','$row[prod_name]','$row[price]','$_POST[Quan]', '$row[shipping_fee]')") or die(mysqli_error($link));
 
               $retrieve2 = mysqli_query($link, "SELECT *, (quantity * price + shipping) AS totalPayment FROM `purchased` WHERE email = '$_POST[Email]' AND prod_id = $id 
-              AND lname = '$_POST[lname]'");
+              AND lname = '$_POST[lname]' AND quantity = '$_POST[Quan]'");
+              $get = mysqli_fetch_array($retrieve2);
+
+              echo "<label style='font-weight: bold; font-size: 20px; text-decoration: underline;'>";
+              echo "Your Order and Information";
+              echo "</label>";
+
+
+              echo "<label>";
+              echo "Fullname: " . $get["lname"] . " " . $get["fname"];
+              echo "</label>";
+
+              echo "<label>";
+              echo "Phone #.: " . $get["phoneNo."];
+              echo "</label>";
+
+              echo "<label>";
+              echo "Email : " . $get["email"];
+              echo "</label>";
+
+              echo "<label>";
+              echo "Home Address: " . $get["homeAdd"] . " " . $get["town"] . " " . $get["zip"];
+              echo "</label>";
+
+              echo "<label>";
+              echo "Product Name: " . $get["prodName"];
+              echo "</label>";
+
+              echo "<label>";
+              echo "Price: $" . $get["price"];
+              echo "</label>";
+
+              echo "<label>";
+              echo "Quantity: " . $get["quantity"];
+              echo "</label>";
+              echo "<label>";
+              echo "Shipping Fee: " . $get["shipping"];
+              echo "</label>";
+              echo "<label>";
+              echo "Total Payment: $" . $get["totalPayment"];
+              echo "</label>";
+
+              echo "<button style='margin-left: 20%;'>";
+              echo "Back to Products";
+              echo "</button>";
+            } elseif (isset($_POST["buy"]) && $id == "11") {
+              $retrieve = mysqli_query($link, "SELECT * FROM product WHERE prod_id=11");
+              $row = mysqli_fetch_array($retrieve);
+              mysqli_query($link, "INSERT INTO `purchased` VALUES ('$row[prod_id]','$_POST[lname]', '$_POST[fname]', '$_POST[houseadd]',
+  '$_POST[City]','$_POST[Zip]', '$_POST[Phone]','$_POST[Email]','$row[prod_name]','$row[price]','$_POST[Quan]', '$row[shipping_fee]')") or die(mysqli_error($link));
+
+              $retrieve2 = mysqli_query($link, "SELECT *, (quantity * price + shipping) AS totalPayment FROM `purchased` WHERE email = '$_POST[Email]' AND prod_id = $id 
+              AND lname = '$_POST[lname]' AND quantity = '$_POST[Quan]'");
+              $get = mysqli_fetch_array($retrieve2);
+
+              echo "<label style='font-weight: bold; font-size: 20px; text-decoration: underline;'>";
+              echo "Your Order and Information";
+              echo "</label>";
+
+
+              echo "<label>";
+              echo "Fullname: " . $get["lname"] . " " . $get["fname"];
+              echo "</label>";
+
+              echo "<label>";
+              echo "Phone #.: " . $get["phoneNo."];
+              echo "</label>";
+
+              echo "<label>";
+              echo "Email : " . $get["email"];
+              echo "</label>";
+
+              echo "<label>";
+              echo "Home Address: " . $get["homeAdd"] . " " . $get["town"] . " " . $get["zip"];
+              echo "</label>";
+
+              echo "<label>";
+              echo "Product Name: " . $get["prodName"];
+              echo "</label>";
+
+              echo "<label>";
+              echo "Price: $" . $get["price"];
+              echo "</label>";
+
+              echo "<label>";
+              echo "Quantity: " . $get["quantity"];
+              echo "</label>";
+              echo "<label>";
+              echo "Shipping Fee: " . $get["shipping"];
+              echo "</label>";
+              echo "<label>";
+              echo "Total Payment: $" . $get["totalPayment"];
+              echo "</label>";
+
+              echo "<button style='margin-left: 20%;'>";
+              echo "Back to Products";
+              echo "</button>";
+            } elseif (isset($_POST["buy"]) && $id == "12") {
+              $retrieve = mysqli_query($link, "SELECT * FROM product WHERE prod_id=12");
+              $row = mysqli_fetch_array($retrieve);
+              mysqli_query($link, "INSERT INTO `purchased` VALUES ('$row[prod_id]','$_POST[lname]', '$_POST[fname]', '$_POST[houseadd]',
+  '$_POST[City]','$_POST[Zip]', '$_POST[Phone]','$_POST[Email]','$row[prod_name]','$row[price]','$_POST[Quan]', '$row[shipping_fee]')") or die(mysqli_error($link));
+
+              $retrieve2 = mysqli_query($link, "SELECT *, (quantity * price + shipping) AS totalPayment FROM `purchased` WHERE email = '$_POST[Email]' AND prod_id = $id 
+              AND lname = '$_POST[lname]' AND quantity = '$_POST[Quan]'");
               $get = mysqli_fetch_array($retrieve2);
 
               echo "<label style='font-weight: bold; font-size: 20px; text-decoration: underline;'>";
